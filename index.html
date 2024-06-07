@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundo login In</title>
+    <link rel="stylesheet" href="./assets/css/login.css">
+  </head>
+  <body>
+    <div class="container">
+      <h2>Fundo</h2>
+      <h3>Sign in</h3>
+      <p>Use your Fundo Account</p>
+      <form action="/login" method="post">
+        <input
+          type="text"
+          name="emailOrPhone"
+          placeholder="Email or phone*"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          placeholder="Password*"
+          required
+        />
+        <div class="links">
+          <a href="/forgot-password">Forgot password</a>
+          <div>
+            <a href="/create-account">Create account</a>
+            <button type="submit">Login</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="footer">
+      <div class="language-selector">
+        <select name="language" id="language">
+          <option value="en">English (United States)</option>
+          <option value="es">Español (España)</option>
+          <option value="fr">Français (France)</option>
+          <option value="de">Deutsch</option>
+          <option value="zh">中文 (简体)</option>
+        </select>
+      </div>
+      <div class="footer-links">
+        <a href="/help">Help</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+      </div>
+    </div>
+  </body>
+</html>
